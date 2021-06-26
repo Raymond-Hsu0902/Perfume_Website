@@ -1,0 +1,805 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "helpers/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+ul{
+  list-style: none;
+  padding-left:0;
+  margin:0;
+}
+
+.modal-title{
+  color: #916000;
+}
+
+.modal-dialog {
+  max-width: 500px;
+  margin: 1.75rem auto;
+}
+
+
+.modal-header{
+  padding: 17px 0;
+}
+
+.modal-content{
+  border-radius: 4px;
+}
+
+.modal{
+  top: 25%;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+
+body {
+  color: #818A91;
+}
+
+a{
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-white a {
+  color: white;
+  display: block!important;
+  text-decoration: none;
+  &:hover{
+    color: white;
+  }
+}
+
+$section-margin:60px;
+$paragraph-margin:52px;
+$custom-mt-2:8px;
+$custom-mt-3:16px;
+$product-list-margin:80px;
+$product-list-y-margin:58px;
+$custom-mt-6:30px;
+$custom-mb-1:32px;
+$custom-mb-2:12px;
+$custom-mt-7:20px;
+$custom-mb-3:82px;
+$custom-mb-4:48px;
+$custom-mb-5:24px;
+$custom-mb-6:20px;
+$custom-mt-8:32px;
+
+@mixin pad {
+  @media (max-width:768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width:1200px) {
+    @content;
+  }
+}
+
+@mixin CTA-btn($color){
+  color:$color;
+  border: 1px solid $color;
+  width: 350px;
+  border-radius: 30px;
+  padding: 13px;
+  text-align: center;
+}
+
+@mixin trial-btn($color){
+  color:$color;
+  font-size: 20px;
+  border: 1px solid $color;
+  width: 100%;
+  border-radius: 30px;
+  padding: 18px;
+  text-align: center;
+}
+
+@mixin loginBtn($bgcolor,$borderColor,$textColor,$width) {
+  text-decoration: none;
+  width: $width;
+  height: 38px;
+  color: $textColor;
+  text-align: center;
+  border-radius: 4px;
+  display: block;
+  line-height: 38px;
+  background-color: $bgcolor;
+  border: 1px solid $borderColor;
+  font-size: 16px;
+}
+
+@mixin dropMenu($width,$padding-left) {
+  width: $width ;
+  padding-left:$padding-left;
+  color: #818A91;
+  font-size: 16px;
+  padding: 8px;
+  line-height: 38px;
+  border: 1px solid #CED4DA;
+border-radius: 4px;
+}
+
+a{
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.bold{
+  font-weight: 700;
+}
+
+.custom-mt-1{
+  margin-top: $section-margin;
+
+}
+
+.custom-mt-2{
+  margin-top: $custom-mt-2;
+}
+
+
+.custom-mt-3{
+  margin-top: $custom-mt-3;
+}
+
+.custom-mt-4{
+  margin-top: $product-list-margin;
+}
+
+.custom-mt-5{
+  margin-top: $product-list-y-margin;
+}
+.custom-mt-6{
+  margin-top: $custom-mt-6;
+}
+
+.custom-mt-7{
+  margin-top: $custom-mt-7;
+}
+
+.custom-mt-8{
+  margin-top: $custom-mt-8;
+}
+
+
+.paragraph-mb-1{
+  margin-bottom: $paragraph-margin;
+}
+
+.custom-mb-1{
+  margin-bottom: $custom-mb-1;
+}
+
+
+
+.custom-mb-2{
+  margin-bottom: $custom-mb-2;
+}
+
+.custom-mb-3{
+  margin-bottom: $custom-mb-3;
+}
+.custom-mb-4{
+  margin-bottom:$custom-mb-4;  
+}
+.custom-mb-5{
+  margin-bottom:$custom-mb-5;
+}
+
+
+
+
+
+
+
+
+.container{
+  max-width: 1140px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row{
+  --bs-gutter-x: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+
+.hero-image{
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.banner{
+  background: url("https://hexschool.github.io/webLayoutTraining1st/perfume-week6/index1.jpg") no-repeat center/cover;
+  position: relative;
+  width: 100%;
+  min-height: 870px;
+}
+
+.banner-set{
+
+  position: absolute;
+  top:295px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.banner-text{
+  width: 445px;
+  color: white;
+  .btn-white{
+    @include CTA-btn(#fff);
+    cursor: pointer;
+    background-color: transparent;
+    &:hover{
+      background-color: #FFFFFF4D;
+    }
+  }
+}
+
+.product-img{
+  width: 555px;
+  height: 555px;
+  object-fit: cover;
+  object-position: left;
+}
+
+.product-title{
+  font-weight: 700;
+  line-height: 48px;
+  color: black;
+}
+
+.product-text{
+  width: 350px;
+  @include pad{
+    width: 100%;
+  }
+}
+
+.text-black{
+  color: #000;
+}
+.row-Reverse{
+  flex-direction: row-reverse;
+  @include pad{
+    flex-direction: column;
+  }
+}
+
+.product-long-img{
+  width: 555px;
+  height:1080px;
+  object-fit: cover;
+}
+
+.btn-black{
+  @include trial-btn(#000);
+}
+
+.advantage-title{
+  color: #000000;
+  font: normal normal 600 24px SF Pro Text;
+  margin-bottom: 0;
+  @include pad{
+    font: normal normal 600 20px SF Pro Text;
+  }
+}
+
+.discount-Price{
+  color: #8D8D8D;
+  text-decoration: line-through;
+  padding-left: 8px;
+}
+
+.product-gallery-img{
+  width: 100%;
+  height: 540px;
+  position: relative;
+  &:after{
+    content: "Sold-out";
+    position: absolute;
+    color:#fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.3;
+    padding: 0;
+    z-index: 1;
+  }
+
+}
+
+.saleState-img{
+  position: relative;
+
+}
+
+.saleState{
+  position: absolute;
+  color:#fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.3;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+    line-height: 540px;
+}
+
+.gallery{
+  background-color: #E0E0E0;
+}
+
+.gallery-block{
+  width: 350px;
+  display: inline-block;
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color:#000;
+  @include pad{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.bottleRecycle{
+  object-fit: cover;
+  width: 730px;
+  height: 520px;
+}
+
+.subscribe-image{
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  background: url("https://hexschool.github.io/webLayoutTraining1st/perfume-week6/index10.jpg") no-repeat center/cover;
+}
+
+.subscribeblock{
+  position:absolute;
+  top: 312px;
+  right: 0;
+  left: 0;
+  bottom: 112px;
+}
+
+.subscribeText{
+  width:350px;
+}
+.subscribeMail{
+  font-size: 16px;
+  width:219px;
+  line-height: 60px;
+  padding-left: 16px;
+  display: inline-block;
+  border: 2px solid #916000;
+}
+.subscribeBtn{
+  font-size: 16px;
+  width:131px;
+  line-height: 60px;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  border: 2px solid #916000;
+  background-color: #916000;
+  text-decoration: none;
+  transition: .3s;
+  &:hover{
+    color:#fff;
+    border: 2px solid #6C4700;
+    background-color: #6C4700;
+  }
+}
+
+.footer{
+  background-color: #916000;
+  color:#fff;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  line-height: 80px;
+
+}
+.footer-image{
+  max-width: 128px;
+  height:auto;
+}
+
+.copyright{
+  padding: 0;
+  margin: 0 0 0 20px;
+}
+.leftFooter{
+  display: inline-block;  
+}
+.rightFooter{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  li{
+    font-size: 20px;
+    padding-right: 36px;
+
+  }
+}
+
+//------------------------------------------product.html
+
+.productList-Bar{
+  background-color: #916000;
+}
+
+.productList{
+  display: flex;
+  color: #fff;
+  align-items: center;
+  margin: 14px 0;
+  li{
+    list-style: none;
+    padding-right: 28px;
+    font-size: 20px;
+  }
+}
+
+.product-card{
+  position: relative;
+  overflow:hidden;
+  &:before{
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+  }
+
+}
+
+.product-list-block{
+  padding: 0 15px;
+}
+
+
+.product-list-img{
+  //width: 255px;
+  //height: 255px;
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  object-fit: cover;
+  width:100%;
+  height: 100%;
+  @include desktop{
+    //width: 165px;
+    //height: 165px;
+  }
+}
+
+.brownIcon{
+  color: #916019;
+  padding-right: 11px;
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  margin-top: 78px;
+  margin-bottom: 60px;
+  li{
+    padding-right: 20px;
+    &:nth-child(1){
+      color: #AC8A46;
+      text-decoration: underline;
+    }
+  }
+}
+
+//--------------------------product
+
+.PT-img-box{
+  width: 100%;
+  @include pad{
+    max-width: 100%;
+  }
+}
+
+.PT-img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.PT-text{
+  position:absolute;
+  right: 0;
+  @include pad{
+    position: relative;
+  }
+}
+
+
+.PT-long-img{
+  object-fit: cover;
+  @include pad{
+    padding: 0;
+  }
+}
+
+.productNumber{
+  font-size: 16px;
+  width:160px;
+  line-height: 60px;
+  padding-left: 16px;
+  border: 1px solid #916000;
+  border-radius: 4px 0px 0px 4px;
+  @include pad{
+    width: 100%;
+  }
+}
+
+.addcartBtn{
+  cursor: pointer;
+  font-size: 16px;
+  width:190px;
+  line-height: 60px;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  border: 2px solid #916000;
+border-radius: 0px 4px 4px 0px;
+  background-color: #916000;
+  text-decoration: none;
+  transition: .3s;
+  &:hover{
+    color:#fff;
+    border: 2px solid #6C4700;
+    background-color: #6C4700;
+  }
+}
+
+.product-intro-title{
+  font: normal normal medium 16px/24px SF Pro Text;;
+  margin-bottom: 0;
+}
+
+.login-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.loginInputbox{
+  width: 100%;
+  height: 38px;
+  font-size: 16px;
+  padding-left: 12px;
+}
+
+.signupBtn{
+  @include loginBtn(transparent,#916000,#916000,65px);
+  margin-right: 8px;
+}
+
+.loginBtn{
+  @include loginBtn(#916000,#916000,white,65px)
+}
+
+//--------------------------------------Member--------------------//
+
+.memeberMenu-title{
+  margin-bottom: 28px;
+  
+}
+
+.memeberMenu-focuState{
+  border-bottom: 2px solid #916000;
+}
+
+.memberMenu{
+  width: 97px;
+}
+
+.memberProfile{
+  width:635px;
+}
+.memberProfile-title{
+  width: 100%;
+  border-bottom: 1px solid #818A91;
+  padding-bottom: 8px;
+}
+
+.memberDetail{
+  //width: 100%;
+}
+
+.memberProfile-form{
+  display: flex;
+  margin-top: 20px;
+}
+
+.memberProfile-formTitle{
+  line-height: 38px;
+}
+
+.memberProfile-formInput{
+  height: 38px;
+  font-size: 16px;
+  padding-left: 10px;
+  color:#818A91;
+  border: 1px solid #CED4DA;
+  border-radius: 4px;
+}
+
+.memberProfile-dropMenu{
+  @include dropMenu(59px,16px)
+}
+
+.memberProfile-address{
+  @include dropMenu(160px,8px);
+  width: 50%;
+  margin-right: 8px;
+}
+
+.memberProfile-addressBox{
+  margin-left: 95px;
+  margin-top: 8px;
+}
+
+.check{
+
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  input[type=checkbox]:checked {
+    color: white;
+    background-color: #916000;;
+}
+}
+
+.text{
+  font: normal normal normal 16px/24px PingFang TC;
+  color: #818A91;
+}
+
+.changeBtn{
+  @include loginBtn(#916000,#916000,white,160px); 
+}
+
+.memberDetail-title{
+  margin-bottom: 25px;
+}
+.memberDetail-formTitle{
+  font: normal normal normal 16px/24px PingFang TC;
+  letter-spacing: 0px;
+  color: #818A91;
+}
+
+
+
+//---------------RWD
+.rightNavbar{
+  display: flex;
+  align-items: center;
+
+  p{
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 16px;
+    height: 16px;
+    font-size:12px;
+    background-color: red;
+    color: white;
+    border-radius: 100%;
+  }
+}
+
+.nav-link{
+  @include pad{
+    color: white!important;
+    background-color: #707070;
+    text-align: center;
+    height: 56px;
+    justify-content: center;
+  }
+
+}
+
+.custom-md-mb-1{
+  @include pad{
+    margin-bottom: $custom-mb-1
+  };
+}
+
+.custom-md-mt-0{
+  @include pad{
+    margin-top: 0;
+  }
+}
+
+.custom-md-mt-1{
+  @include pad {
+    margin-top: 40px;
+  }
+}
+
+.custom-md-mt-2{
+  @include pad{
+    margin-top: $custom-mt-2;
+  }
+}
+
+.custom-md-mt-3{
+  @include pad{
+    margin-top: $custom-mt-3;
+  }
+}
+
+.custom-md-mt-6{
+  @include pad{
+    margin-top: $custom-mt-6;
+  }
+}
+
+
+.custom-md-mb-0{
+  @include pad{
+    margin-bottom: 0;
+  }
+}
+
+.custom-md-mb-6{
+  @include pad{
+    margin-bottom: 0;
+  }
+}
+
+.custom-md-mt-8{
+  @include pad{
+    margin-top: $custom-mt-8;
+  }
+}
+
+.custom-md-mb-9{
+  @include pad{
+    margin-bottom: 40px;
+  }
+}
